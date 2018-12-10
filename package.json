@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgarza007/portfolio_refactored.git"
+  },
+  "author": "Saul Garza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgarza007/portfolio_refactored/issues"
+  },
+  "homepage": "https://github.com/sgarza007/portfolio_refactored#readme"
+}
