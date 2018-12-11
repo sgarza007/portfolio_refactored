@@ -1,3 +1,15 @@
+#rgbGuesser{
+    background-color: #2C3E50;
+    height: 600px;
+}
+
+.square{
+    height: 200px;
+    width: 200px;
+    background-color: #C0392B;
+    float: left;
+}
+
 .header{
     text-align: center;
 }
