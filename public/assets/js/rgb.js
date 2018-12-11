@@ -20,6 +20,10 @@ function main(){
             $(this).css( "backgroundColor","#2C3E50");
         }
     });
+    //add event listener on New Colors btn
+    $("#newColors").on("click",function(){
+        setColor(squares);
+    });
 }
 
 //sets color of squares

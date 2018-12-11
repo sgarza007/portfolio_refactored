@@ -3,11 +3,17 @@
     display:inline-block;
     margin: 0 auto;
     background-color: #2C3E50;
+    text-align: center;
 }
 
 .rgb-container{
     max-width: 600px;
     margin: 0 auto;
+}
+
+.rgb-header{
+    height: 30px;
+    background-color: white;
 }
 
 .square{
@@ -16,6 +22,10 @@
     background-color: #C0392B;
     float: left;
     margin: 1.66%
+}
+
+.hide{
+    display: none;
 }
 
 .header{
