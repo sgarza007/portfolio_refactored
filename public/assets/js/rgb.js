@@ -17,7 +17,6 @@ function main(){
             //change text to say play again?
         } else{
             //make the square disappear
-            console.log("wrong");
             $(this).css( "backgroundColor","#2C3E50");
         }
     });
