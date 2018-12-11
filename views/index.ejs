@@ -1,12 +1,15 @@
-<% include ../partials/header %>
+<% include partials/header %>
 
-<div class="container-fluid">
+<div class="container">
 	<section id="aboutMe" class="row">
+		<header class="header col-md-12 my-5">
+			<h2>About Me</h2>
+		</header>
 		<div class="col-md-6">
-			<img class="img-thumbnail my-5" src="../assets/images/profile_pic.png">
+			<img class="img-thumbnail" src="../assets/images/profile_pic.png">
 		</div>
 		<div class="col-md-6">
-			<p class="child-center my-5">
+			<p class="child-center">
 				<span class="indent">
 					My name is Saul Garza and I am currently in my last semester at the University of San Diego. I will be <em>graduating
 						this December (2018)</em> with a BA in <em>Computer Science</em> and a minor in Mathematics.
@@ -17,7 +20,8 @@
 				<span class="indent">
 					I've recently developed a strong interest in website development and thus proceeded to teach myself over summer
 					through Udemy. I've done a little bit of everything from front-end development to back-end development. Although I
-					am self-taught, I am continuing to find ways to learn and improve my skills. A few ways I've done this is through
+					am self-taught, my drive to learn, improve and adapt outweight my lack of professional experience. A few ways I've
+					done this is through
 					projects and extra online courses. Feel free to look around and contact me if you have any questions. You can find
 					my contact information <a class="media-link" href="/contact">here.</a>
 				</span>
@@ -26,7 +30,7 @@
 
 				<span class="indent">
 					On a more personal note, I like to spend my free time hanging out with friends and family, watching my favorite
-					Twitch streamers (CDNThe3rd, RequiemSlaps, Dakotaz) and playing videogames like Fortnite (7-solo Victory Royales
+					Twitch streamers (CDNThe3rd, RequiemSlaps, Dakotaz) and playing videogames like Fortnite (10-solo Victory Royales
 					<i class="far fa-smile-wink"></i>), FIFA, and Battlefield. Oh and I also love to travel! I've been to over 15
 					different countries (and counting) and decided to include a few images of my adventures <a class="media-link" href="/travel">here.</a>
 				</span>
@@ -35,7 +39,9 @@
 	</section>
 
 	<section id="skills" class="row">
-
+		<header class="header col-md-12 my-5">
+			<h2>Skills</h2>
+		</header>
 		<div class="xp-element col-md-4">
 			<div class="card">
 				<h5 class="card-header">In the Works:</h5>
@@ -89,7 +95,10 @@
 		</div>
 	</section>
 
-	<section id="workXP" class="row">
+	<section id="experience" class="row">
+		<header class="header col-md-12 my-5">
+			<h2>Work Experience</h2>
+		</header>
 		<div class="xp-element col-md-4">
 			<div class="card">
 				<img class="card-img-top" src="/assets/images/storestickums_logo.jpg">
@@ -136,6 +145,9 @@
 	</section>
 
 	<section id="contact" class="row">
+		<header class="header col-md-12 my-5">
+			<h2>Contact</h2>
+		</header>
 		<div class="col-md-12 col-sm-12 contact-element">
 			<h2>Feel free to contact me via:</h2>
 		</div>
@@ -158,3 +170,5 @@
 	</section>
 
 </div>
+
+<% include partials/footer.ejs %>
