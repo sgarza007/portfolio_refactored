@@ -1,12 +1,17 @@
 function main(){
     let squares = $(".square");
-    squares.on("click", function () {
-        console.log("Clicked");
-    });
-    squares.each(function(i){
-        $(this).css("color",randomRGB);
-    });
+    // squares.on("click", function () {
+    //     console.log("Clicked");
+    // });
+    // squares.each(function(i){
+    //     $(this).css("color",randomRGB);
+    // });
+
+    squares.each(function(i,square){
+        $(this).css( "backgroundColor",randomRGB);
+    })
 }
+
 
 //create a random RGB generator
 function randomRGB(){
