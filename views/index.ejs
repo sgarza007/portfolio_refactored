@@ -147,19 +147,19 @@
 	<section class="row">
 		<header class="header col-md-12">
 			<h2>Projects</h2>
-			<div id="rgbGuesser" class="col-md-12">
-				<div id="topThree" class="col-md-12">
-					<div class="square mx-4 my-4"></div>
-					<div class="square mx-4 my-4"></div>
-					<div class="square mx-4 my-4"></div>
-				</div>
-				<div id="bottomThree" class="col-md-12">
-					<div class="square mx-4 my-4"></div>
-					<div class="square mx-4 my-4"></div>
-					<div class="square mx-4 my-4"></div>
-				</div>
-			</div>
 		</header>
+		<div id="rgbGuesser" class="col-md-12">
+			<div id="topThree" class="row">
+				<div class="square mx-4 my-4"></div>
+				<div class="square mx-4 my-4"></div>
+				<div class="square mx-4 my-4"></div>
+			</div>
+			<div id="bottomThree" class="row">
+				<div class="square mx-4 my-4"></div>
+				<div class="square mx-4 my-4"></div>
+				<div class="square mx-4 my-4"></div>
+			</div>
+		</div>
 	</section>
 
 	<section id="contact" class="row">
@@ -188,5 +188,9 @@
 	</section>
 
 </div>
+
+<script>
+	main();
+</script>
 
 <% include partials/footer.ejs %>
