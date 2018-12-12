@@ -2,17 +2,45 @@ function main(){
     let squares = $(".square");
     let rgbMessage = $("#rgbMessage");
     let newColorsBtn = $("#newColors");
+    let easyBtn = $("#rgbEasy");
+    let hardBtn = $("#rgbHard");
+    let numOfSquares = 6;
+
     //assign a random RGB to each square
     setColor(squares);
+
     //pick an rgb to be the one to guess
-    let correctRGB = $(squares[randomNum(6)]).css("backgroundColor");
+    let correctRGB = pickRGB(squares, numOfSquares);
     $("#rgbDisplay").text(correctRGB);
 
     //add event listener on New Colors btn
     newColorsBtn.on("click",function(){
         setColor(squares);
-        correctRGB = $(squares[randomNum(6)]).css("backgroundColor");
+        correctRGB = pickRGB(squares, numOfSquares);
         $("#rgbDisplay").text(correctRGB);
+        rgbMessage.text("");
+    });
+
+    //event listener for easy and hard mode
+    easyBtn.on("click",function(){
+        numOfSquares = 3;
+        setColor(squares);
+        correctRGB = pickRGB(squares, numOfSquares);
+        $("#rgbDisplay").text(correctRGB);
+        //make bottom squares disappear
+        $(squares[3]).css("display","none");
+        $(squares[4]).css("display","none");
+        $(squares[5]).css("display","none");
+        rgbMessage.text("");
+    });
+    hardBtn.on("click",function(){
+        numOfSquares = 6;
+        setColor(squares);
+        correctRGB = pickRGB(squares, numOfSquares);
+        $("#rgbDisplay").text(correctRGB);
+        $(squares[3]).css("display","block");
+        $(squares[4]).css("display","block");
+        $(squares[5]).css("display","block");
         rgbMessage.text("");
     });
 
@@ -25,7 +53,6 @@ function main(){
             squares.each(function(){
                 $(this).css("backgroundColor",correctRGB);
                 rgbMessage.text("YOU GOT IT!!");
-
             });
         } else{
             //make the square disappear
@@ -35,11 +62,20 @@ function main(){
     });
 }
 
+function start(){
+
+}
+
 //sets color of squares
 function setColor(squares){
     squares.each(function(){
         $(this).css( "backgroundColor",randomRGB());
     });
+}
+
+//picks the color of the squares to be the one to be guessed
+function pickRGB(squares, numOfSquares){
+    return $(squares[randomNum(numOfSquares)]).css("backgroundColor");
 }
 
 //create a random RGB generator
