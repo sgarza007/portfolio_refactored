@@ -1,28 +1,37 @@
 function main(){
     let squares = $(".square");
+    let rgbMessage = $("#rgbMessage");
+    let newColorsBtn = $("#newColors");
     //assign a random RGB to each square
     setColor(squares);
     //pick an rgb to be the one to guess
     let correctRGB = $(squares[randomNum(6)]).css("backgroundColor");
-    console.log(correctRGB);
-    //check to see if they guessed the right RGB
+    $("#rgbDisplay").text(correctRGB);
+
+    //add event listener on New Colors btn
+    newColorsBtn.on("click",function(){
+        setColor(squares);
+        correctRGB = $(squares[randomNum(6)]).css("backgroundColor");
+        $("#rgbDisplay").text(correctRGB);
+        rgbMessage.text("");
+    });
+
+    //event listener to check if they guessed the right RGB
     squares.on("click", function () {
         let clickedRGB = $(this).css("backgroundColor");
         //check to see if right one was guessed
         if(clickedRGB === correctRGB){
             //turn every square to the correct color
             squares.each(function(){
-                $(this).css( "backgroundColor",correctRGB);
+                $(this).css("backgroundColor",correctRGB);
+                rgbMessage.text("YOU GOT IT!!");
+
             });
-            //change text to say play again?
         } else{
             //make the square disappear
             $(this).css( "backgroundColor","#2C3E50");
+            rgbMessage.text("Try Again!");
         }
-    });
-    //add event listener on New Colors btn
-    $("#newColors").on("click",function(){
-        setColor(squares);
     });
 }
 
