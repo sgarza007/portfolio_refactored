@@ -1,4 +1,4 @@
-function main(){
+function rgbMain(){
     let squares = $(".square");
     let rgbMessage = $("#rgbMessage");
     let newColorsBtn = $("#newColors");

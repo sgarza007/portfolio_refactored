@@ -72,3 +72,15 @@
 #profile-pic{
     max-height: 90vh;
 }
+
+.indent{
+	margin-left: 50px;
+}
+
+.contact-element{
+	margin-top: 7%;
+}
+
+.contact-link{
+	margin-bottom: 10px;
+}
