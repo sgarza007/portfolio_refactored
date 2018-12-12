@@ -1,13 +1,23 @@
-body{
-    
+body,.card,.list-group-item{
+    background-color: #ECF0F1;
 }
+
+.navbar{
+    background-color: #2980B9!important;
+}
+
+.nav-link{
+    color: #ecf0f1!important;
+}
+
 .project{
     width: 95%;
     display:inline-block;
     margin: 0 auto;
-    background-color: #2C3E50;
+    background-color:#ECF0F1;
     text-align: center;
     margin-top: 20px;
+    border: 2px solid #3498DB;
 }
 
 .rgb-container{
@@ -19,18 +29,16 @@ body{
 
 .rgb-navbar{
     height: 30px;
-    background-color: #2C3E50;
+    background-color: white;
 }
 
-.project-header{
-    color: white;
+.project-header{;
     letter-spacing: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #rgbMessage,.rgbBtns{
-    color: white;
 }
 
 .square{
