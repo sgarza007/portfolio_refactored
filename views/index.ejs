@@ -1,14 +1,14 @@
 <% include partials/header %>
 
-<div class="container-fluid">
+<div class="container">
 	<section id="aboutMe" class="row">
-		<header class="header col-md-12 my-5">
+		<header class="header col-md-12 my-3">
 			<h2>About Me</h2>
 		</header>
-		<div class="col-md-6">
-			<img id="profile-pic" class="img-thumbnail" src="../assets/images/profile_pic.png">
+		<div class="col-lg-6">
+			<img id="profile-pic" class="img-thumbnail center" src="../assets/images/profile_pic.png">
 		</div>
-		<div class="parent-center col-md-6 col-sm-12">
+		<div class="parent-center col-lg-6 col-sm-12">
 			<p class="child-center">
 				<span class="indent">
 					My name is Saul Garza and I am currently in my last semester at the University of San Diego. I will be <em>graduating
@@ -32,14 +32,15 @@
 					On a more personal note, I like to spend my free time hanging out with friends and family, watching my favorite
 					Twitch streamers (CDNThe3rd, RequiemSlaps, Dakotaz) and playing videogames like Fortnite (10-solo Victory Royales
 					<i class="far fa-smile-wink"></i>), FIFA, and Battlefield. Oh and I also love to travel! I've been to over 15
-					different countries (and counting) and decided to include a few images of my adventures <a class="media-link" href="/travel">here.</a>
+					different countries (and counting). I've decided to include a few images of my adventures <a class="media-link"
+					 href="/travel">here!</a>
 				</span>
 			</p>
 		</div>
 	</section>
 
 	<section id="skills" class="row">
-		<header class="header col-md-12 my-5">
+		<header class="header col-md-12 my-3">
 			<h2>Skills</h2>
 		</header>
 		<div class="xp-element col-md-4">
@@ -52,7 +53,7 @@
 						<li class="list-group-item">Webpack <i class="fas fa-cube fa-pull-right"></i> </li>
 						<li class="list-group-item">TypeScript <i class="fas fa-code fa-pull-right"></i></li>
 						<li class="list-group-item">Docker <i class="fab fa-docker fa-pull-right"></i></li>
-						<li class="list-group-item">Jest <i class="fas fa-code fa-pull-right"></i></li>
+						<li class="list-group-item">Jasmine <i class="fas fa-code fa-pull-right"></i></li>
 					</ul>
 				</div>
 			</div>
@@ -81,13 +82,11 @@
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item">HTML <i class="fab fa-html5 fa-pull-right"></i></li>
 						<li class="list-group-item">CSS <i class="fab fa-css3-alt fa-pull-right"></i></li>
-						<li class="list-group-item">Javascript <i class="fab fa-js fa-pull-right"></i></li>
+						<li class="list-group-item">Javascript/EJS <i class="fab fa-js fa-pull-right"></i></li>
 						<li class="list-group-item">jQuery <i class="fas fa-code fa-pull-right"></i></li>
-						<li class="list-group-item">EJS <i class="fas fa-code fa-pull-right"></i></li>
 						<li class="list-group-item">MongoDB <i class="fas fa-database fa-pull-right"></i></li>
-						<li class="list-group-item">Node.js <i class="fab fa-node fa-pull-right"></i></li>
+						<li class="list-group-item">Node.js/Express <i class="fab fa-node fa-pull-right"></i></li>
 						<li class="list-group-item">NPM <i class="fab fa-npm fa-pull-right"></i></li>
-						<li class="list-group-item">Express <i class="fas fa-code fa-pull-right"></i></li>
 						<li class="list-group-item">Bootstrap <i class="fas fa-code fa-pull-right"></i></li>
 					</ul>
 				</div>
@@ -96,7 +95,7 @@
 	</section>
 
 	<section id="experience" class="row">
-		<header class="header col-md-12 my-5">
+		<header class="header col-md-12 my-3">
 			<h2>Work Experience</h2>
 		</header>
 		<div class="xp-element col-md-4">
@@ -131,13 +130,13 @@
 			<div class="card">
 				<img class="card-img-top" src="/assets/images/usd_logo.png">
 				<div class="card-body">
-					<h5 class="card-title">University of San Diego, ITS Help Desk</h5>
+					<h5 class="card-title">USD, ITS Help Desk</h5>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item">Work with the university community to identify problems and deliver quality service
 							and solution</li>
 						<li class="list-group-item">Provide mentorship and aid to the new student techs in order to maintain the high
 							standards of the IT department on campus</li>
-						<li class="list-group-item">Has aided in developing my interpersonal skills</li>
+						<!-- <li class="list-group-item">Has aided in developing my interpersonal skills</li> -->
 					</ul>
 				</div>
 			</div>
@@ -148,6 +147,48 @@
 		<header class="header col-md-12">
 			<h2>Projects</h2>
 		</header>
+		<div class="xp-element col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="/assets/images/portfolio_home.png">
+				<div class="card-body">
+					<h5 class="card-title">RGB Guessing Game</h5>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Created a simple, yet fun RGB guesser in order to practice DOM manipulation</li>
+						<li class="list-group-item">See below to play!</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="xp-element col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="/assets/images/xcode_logo.png">
+				<div class="card-body">
+					<h5 class="card-title">Trave.ly</h5>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Created an iOS app as a senior design project with three others</li>
+						<li class="list-group-item">Calculated a trip's estimated cost using Amadeus Flight/Hotel API</li>
+						<li class="list-group-item">Personally focused on UI/UX of the app by demoing the app to our users at the end
+							of every two-week sprint</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="xp-element col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="/assets/images/twitch_dev.png">
+				<div class="card-body">
+					<h5 class="card-title">Twitch API Web App</h5>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Decided to build a web app using Twitch's API as a side project</li>
+						<li class="list-group-item">Retrieved a streamer's information and displayed
+							it for the user. See below for a simple sample.</li>
+						<li class="list-group-item">Worked with Nodejs, Express, MongoDB and the Twitch API to get information needed and
+							create a smooth user experience</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="project">
 			<div class="project-header">
 				<h1>THE RGB GUESSING GAME</h1>
@@ -176,47 +217,30 @@
 			</div>
 		</div>
 
-		<div class="project project-header col-md-12">
+		<div class="project project-header">
 			<h2>Twitch API Web App Sample</h2>
 			<input id="streamInput" type="text">
 			<button id="getData">Get Data</button>
 			<p id="streamData"></p>
 			<table>
-					<tr>
-					  <th>Stream Name</th>
-					  <th>Game</th> 
-					  <th>Viewers</th>
-					</tr>
-					<tr>
-					  <td id="streamName"></td>
-					  <td id="streamGame"></td> 
-					  <td id="streamViewers"></td>
-					</tr>
-				  </table>
+				<tr>
+					<th>Stream Name</th>
+					<th>Game</th>
+					<th>Viewers</th>
+				</tr>
+				<tr>
+					<td id="streamName">N/A</td>
+					<td id="streamGame">N/A</td>
+					<td id="streamViewers">N/A</td>
+				</tr>
+			</table>
 		</div>
-
-		<div class="xp-element col-md-6">
-				<div class="card">
-					<img class="card-img-top" src="/assets/images/xcode_logo.png">
-					<div class="card-body">
-						<h5 class="card-title">Trave.ly</h5>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Created an iOS app as a senior design project with three others</li>
-							<li class="list-group-item">Calculated a trip's estimated cost using Amadeus Flight/Hotel API</li>
-							<li class="list-group-item">Personally focused on the UI/UX of the app by demoing the app to our users at the end of each two-week sprint</li>
-						</ul>
-					</div>
-				</div>
-			</div>
 	</section>
 
 	<section id="contact" class="row">
-		<header class="header col-md-12 my-5">
+		<header class="header col-md-12 my-3">
 			<h2>Contact</h2>
 		</header>
-		<div class="col-md-12 col-sm-12 contact-element">
-			<h2>Feel free to contact me via:</h2>
-		</div>
 		<div class="col-md-6 col-sm-12 text-center contact-element">
 			<a class="media-link" href="mailto:saulgarza007@gmail.com" target="_blank"><i class="contact-link fas fa-envelope fa-7x"></i></a>
 			<h3>saulgarza007@gmail.com</h3>

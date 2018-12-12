@@ -54,7 +54,7 @@ function rgbMain(){
             //turn every square to the correct color
             squares.each(function(){
                 $(this).css("backgroundColor",correctRGB);
-                rgbMessage.text("YOU GOT IT!!");
+                rgbMessage.text("YOU GOT IT!");
                 newColorsBtn.text("Play Again?");
             });
         } else{

@@ -1,3 +1,6 @@
+body{
+    
+}
 .project{
     width: 95%;
     display:inline-block;
@@ -16,8 +19,7 @@
 
 .rgb-navbar{
     height: 30px;
-    background-color: white;
-    border: 1px solid #2C3E50;
+    background-color: #2C3E50;
 }
 
 .project-header{
@@ -25,6 +27,10 @@
     letter-spacing: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#rgbMessage,.rgbBtns{
+    color: white;
 }
 
 .square{
@@ -37,17 +43,18 @@
 }
 
 #newColors{
-    margin-right: 7%;
+    margin-right: 2.5%;
 }
 
 #rgbDifficultyBtns{
-    margin-left: 7%;
+    margin-left: 2.5%;
     display: inline;
 }
 
 .rgbBtns{
     border-style: none;
     letter-spacing: 3px;
+    background-color: #2C3E50;
 }
 
 .rgbBtns:focus {
@@ -68,6 +75,12 @@
     display: none;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .header{
     text-align: center;
 }
@@ -77,17 +90,30 @@
 }
 
 .indent{
-	margin-left: 50px;
+	margin-left: 25px;
 }
 
 .contact-element{
-	margin-top: 7%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .contact-link{
 	margin-bottom: 10px;
 }
 
+.xp-element{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 table{
     width: 100%;
 }
+
+.child-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
