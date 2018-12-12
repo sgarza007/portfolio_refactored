@@ -68,3 +68,7 @@
 .header{
     text-align: center;
 }
+
+#profile-pic{
+    max-height: 90vh;
+}
