@@ -9,11 +9,19 @@
 .rgb-container{
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 20px;
+}
+
+.rgb-navbar{
+    height: 30px;
+    background-color: white;
 }
 
 .rgb-header{
-    height: 30px;
-    background-color: white;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .square{
@@ -43,15 +51,15 @@
     outline: none;
 }
 
-.rgbBtns:hover {
-    color: #C0392B;
+.rgbBtns:hover{
+    background-color: steelblue;
+    color: white;
 }
 
 .active{
-    background-color: red;
+    background-color: steelblue;
+    color: white;
 }
-
-
 
 .hide{
     display: none;

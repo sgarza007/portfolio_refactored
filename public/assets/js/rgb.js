@@ -18,12 +18,15 @@ function main(){
         setColor(squares);
         correctRGB = pickRGB(squares, numOfSquares);
         $("#rgbDisplay").text(correctRGB.toUpperCase());
+        $(this).text("New Colors");
         rgbMessage.text("");
     });
 
     //event listener for easy and hard mode
     easyBtn.on("click",function(){
         numOfSquares = 3;
+        $(this).addClass("active");
+        hardBtn.removeClass("active");
         setColor(squares);
         correctRGB = pickRGB(squares, numOfSquares);
         $("#rgbDisplay").text(correctRGB.toUpperCase());
@@ -34,6 +37,8 @@ function main(){
     hardBtn.on("click",function(){
         numOfSquares = 6;
         setColor(squares);
+        $(this).addClass("active");
+        easyBtn.removeClass("active");
         correctRGB = pickRGB(squares, numOfSquares);
         $("#rgbDisplay").text(correctRGB.toUpperCase());
         //make bottom squares appear
@@ -50,6 +55,7 @@ function main(){
             squares.each(function(){
                 $(this).css("backgroundColor",correctRGB);
                 rgbMessage.text("YOU GOT IT!!");
+                newColorsBtn.text("Play Again?");
             });
         } else{
             //make the square disappear
