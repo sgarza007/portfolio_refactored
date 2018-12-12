@@ -149,22 +149,27 @@
 			<h2>Projects</h2>
 		</header>
 		<div id="rgbGuesser">
-			<h1>THE RGBGUESSING GAME</h1>
+			<h1>THE RGB GUESSING GAME</h1>
 			<h2 id="rgbDisplay"></h2>
 			<p>Do you know your RGBs?</p>
 			<div class="rgb-header">
-				<button id="newColors">New Colors</button>
+				<button id="newColors" class="rgbBtns">New Colors</button>
 				<span id="rgbMessage"></span>
-				<button id="rgbEasy">Easy</button>
-				<button id="rgbHard">Hard</button>
+				<div id="rgbDifficultyBtns">
+					<button id="rgbEasy" class="rgbBtns">Easy</button>
+				<button id="rgbHard" class="rgbBtns">Hard</button>
+				</div>
+				
 			</div>
 			<div class="rgb-container">
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
+				<div id="bottomThree">
+					<div class="square"></div>
+					<div class="square"></div>
+					<div class="square"></div>
+				</div>
 			</div>
 		</div>
 	</section>

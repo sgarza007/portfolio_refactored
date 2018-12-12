@@ -21,8 +21,37 @@
     padding-bottom: 30%;
     background-color: #C0392B;
     float: left;
-    margin: 1.66%
+    margin: 1.66%;
+    border-radius: 25%;
 }
+
+#newColors{
+    margin-right: 7%;
+}
+
+#rgbDifficultyBtns{
+    margin-left: 7%;
+    display: inline;
+}
+
+.rgbBtns{
+    border-style: none;
+    letter-spacing: 3px;
+}
+
+.rgbBtns:focus {
+    outline: none;
+}
+
+.rgbBtns:hover {
+    color: #C0392B;
+}
+
+.active{
+    background-color: red;
+}
+
+
 
 .hide{
     display: none;

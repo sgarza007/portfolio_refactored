@@ -11,13 +11,13 @@ function main(){
 
     //pick an rgb to be the one to guess
     let correctRGB = pickRGB(squares, numOfSquares);
-    $("#rgbDisplay").text(correctRGB);
+    $("#rgbDisplay").text(correctRGB.toUpperCase());
 
     //add event listener on New Colors btn
     newColorsBtn.on("click",function(){
         setColor(squares);
         correctRGB = pickRGB(squares, numOfSquares);
-        $("#rgbDisplay").text(correctRGB);
+        $("#rgbDisplay").text(correctRGB.toUpperCase());
         rgbMessage.text("");
     });
 
@@ -26,21 +26,18 @@ function main(){
         numOfSquares = 3;
         setColor(squares);
         correctRGB = pickRGB(squares, numOfSquares);
-        $("#rgbDisplay").text(correctRGB);
+        $("#rgbDisplay").text(correctRGB.toUpperCase());
         //make bottom squares disappear
-        $(squares[3]).css("display","none");
-        $(squares[4]).css("display","none");
-        $(squares[5]).css("display","none");
+        $("#bottomThree").css("display","none");
         rgbMessage.text("");
     });
     hardBtn.on("click",function(){
         numOfSquares = 6;
         setColor(squares);
         correctRGB = pickRGB(squares, numOfSquares);
-        $("#rgbDisplay").text(correctRGB);
-        $(squares[3]).css("display","block");
-        $(squares[4]).css("display","block");
-        $(squares[5]).css("display","block");
+        $("#rgbDisplay").text(correctRGB.toUpperCase());
+        //make bottom squares appear
+        $("#bottomThree").css("display","block");
         rgbMessage.text("");
     });
 
