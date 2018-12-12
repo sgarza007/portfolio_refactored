@@ -148,8 +148,8 @@
 		<header class="header col-md-12">
 			<h2>Projects</h2>
 		</header>
-		<div id="rgbGuesser">
-			<div class="rgb-header">
+		<div class="project">
+			<div class="project-header">
 				<h1>THE RGB GUESSING GAME</h1>
 				<h2 id="rgbDisplay"></h2>
 				<p>Do you know your RGBs?</p>
@@ -176,12 +176,38 @@
 			</div>
 		</div>
 
-		<div id="twitchProj">
+		<div class="project project-header col-md-6">
 			<h2>Twitch API Web App Sample</h2>
-			<input id="streamName" type="text">
+			<input id="streamInput" type="text">
 			<button id="getData">Get Data</button>
-			<p></p>
+			<p id="streamData"></p>
+			<table>
+					<tr>
+					  <th>Stream Name</th>
+					  <th>Game</th> 
+					  <th>Viewers</th>
+					</tr>
+					<tr>
+					  <td id="streamName"></td>
+					  <td id="streamGame"></td> 
+					  <td id="streamViewers"></td>
+					</tr>
+				  </table>
 		</div>
+
+		<div class="xp-element col-md-6">
+				<div class="card">
+					<img class="card-img-top" src="/assets/images/xcode_logo.png">
+					<div class="card-body">
+						<h5 class="card-title">Trave.ly</h5>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Created an iOS app as a senior design project with three others</li>
+							<li class="list-group-item">Calculated a trip's estimated cost using Amadeus Flight/Hotel API</li>
+							<li class="list-group-item">Personally focused on the UI/UX of the app by demoing the app to our users at the end of each two-week sprint</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 	</section>
 
 	<section id="contact" class="row">

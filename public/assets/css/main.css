@@ -1,23 +1,27 @@
-#rgbGuesser{
+.project{
     width: 95%;
     display:inline-block;
     margin: 0 auto;
     background-color: #2C3E50;
     text-align: center;
+    margin-top: 20px;
+
 }
 
 .rgb-container{
     max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
+    
 }
 
 .rgb-navbar{
     height: 30px;
     background-color: white;
+    border: 1px solid #2C3E50;
 }
 
-.rgb-header{
+.project-header{
     color: white;
     letter-spacing: 3px;
     margin-top: 20px;
@@ -83,4 +87,8 @@
 
 .contact-link{
 	margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
 }

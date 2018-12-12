@@ -1,20 +1,24 @@
 function twitchMain(){
     let getDataBtn = $("#getData");
-    let streamName = $("#streamName");
+    let streamInput = $("#streamInput");
+    
     getDataBtn.on("click",function(){
         //check to see if there was anything typed
 
         //TODO: ERROR HANDLING
-        if(streamName.val.length === 0) console.log("error");
-        console.log(streamName.val());
-        makeRequest(streamName.val());
+        if(streamInput.val.length === 0) console.log("error");
+        console.log(streamInput.val());
+        makeRequest(streamInput.val());
     });   
 }
 
-function makeRequest(streamName){
+function makeRequest(streamInput){
+    let streamName = $("#streamName");
+    let streamGame = $("#streamGame");
+    let streamViewers = $("#streamViewers");
     const key = "?client_id=03i44s2mzxk0s9ksqzvhu16i5im3ul";
     const url = "https://api.twitch.tv/kraken/streams/";
-    fetch(url+streamName+key)
+    fetch(url+streamInput+key)
     .then(function(res){
         if(!res.ok){
             throw Error("Oops! Something went wrong.");
@@ -27,6 +31,15 @@ function makeRequest(streamName){
     })
     .then(function(data){
         console.log(data);
+        //update view
+        let streamStatus = data.stream;
+        if(streamStatus){
+            streamName.text(data.stream.channel.display_name);
+            streamGame.text(data.stream.game);
+            streamViewers.text(data.stream.viewers);
+        } else{
+            streamName.text("NOT LIVE");
+        }
     })
     .catch(function(err){
         alert(err);
