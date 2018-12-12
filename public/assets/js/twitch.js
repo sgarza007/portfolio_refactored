@@ -38,7 +38,9 @@ function makeRequest(streamInput){
             streamGame.text(data.stream.game);
             streamViewers.text(data.stream.viewers);
         } else{
-            streamName.text("NOT LIVE");
+            streamName.text(streamInput);
+            streamGame.text("IS NOT LIVE");
+            streamViewers.text("0");
         }
     })
     .catch(function(err){
