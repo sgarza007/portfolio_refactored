@@ -33,6 +33,7 @@ function rgbMain(){
         //make bottom squares disappear
         $("#bottomThree").css("display","none");
         rgbMessage.text("");
+        newColorsBtn.text("New Colors");
     });
     hardBtn.on("click",function(){
         numOfSquares = 6;
@@ -44,6 +45,7 @@ function rgbMain(){
         //make bottom squares appear
         $("#bottomThree").css("display","block");
         rgbMessage.text("");
+        newColorsBtn.text("New Colors");
     });
 
     //event listener to check if they guessed the right RGB
@@ -59,7 +61,7 @@ function rgbMain(){
             });
         } else{
             //make the square disappear
-            $(this).css( "backgroundColor","#2C3E50");
+            $(this).css( "backgroundColor","#ECF0F1");
             rgbMessage.text("Try Again!");
         }
     });

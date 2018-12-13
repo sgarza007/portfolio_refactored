@@ -20,6 +20,21 @@ body,.card,.list-group-item{
     border: 2px solid #3498DB;
 }
 
+.img-thumbnail,.card{
+	border: 2px solid #3498DB;
+}
+
+.list-group-item{
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.card-img-top{
+    max-height: 300px;
+}
+
 .rgb-container{
     max-width: 600px;
     margin: 0 auto;
@@ -29,16 +44,17 @@ body,.card,.list-group-item{
 
 .rgb-navbar{
     height: 30px;
-    background-color: white;
+    background-color: #ECF0F1;
 }
 
-.project-header{;
+.project-header{
     letter-spacing: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #rgbMessage,.rgbBtns{
+    background-color: #ECF0F1;
 }
 
 .square{
@@ -62,7 +78,6 @@ body,.card,.list-group-item{
 .rgbBtns{
     border-style: none;
     letter-spacing: 3px;
-    background-color: #2C3E50;
 }
 
 .rgbBtns:focus {
@@ -70,12 +85,12 @@ body,.card,.list-group-item{
 }
 
 .rgbBtns:hover{
-    background-color: steelblue;
+    background-color: #3498DB;
     color: white;
 }
 
 .active{
-    background-color: steelblue;
+    background-color: #3498DB;
     color: white;
 }
 
@@ -103,11 +118,36 @@ body,.card,.list-group-item{
 
 .contact-element{
 	padding-top: 20px;
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .contact-link{
-	margin-bottom: 10px;
+    margin-bottom: 10px;
+    color: #3498DB;
+}
+
+.media-link{
+	color:#3498DB; 
+	text-decoration:none; 
+	cursor:pointer;
+}
+.media-link:hover{
+	color:#2980B9; 
+	text-decoration:none; 
+}
+
+.hr-header{
+    max-width: 25%;
+    background-color:#3498DB; 
+    display: inline;
+}
+
+table{
+    margin-bottom: 10px;
+}
+
+#twitch-container{
+    margin-top: 30px;
 }
 
 .xp-element{
