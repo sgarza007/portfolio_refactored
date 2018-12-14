@@ -1,18 +1,8 @@
 function main(){
-  $("#skills").fadeOut();
-  
-  var waypoint = new Waypoint({
-    element: document.getElementById('skills'),
-    handler: function(direction) {
-      if(direction === "down"){
-        //fadeIn skills
-        $("#skills").fadeIn(700);
-      } else{
-      }
-    },
-    offset: 100
-  });
-      initMasonry();
+  initMasonry();
+  setWaypoints();
+  rgbMain();
+  twitchMain();
 }
 
 function initMasonry(){
@@ -24,5 +14,41 @@ function initMasonry(){
 
   $('.grid').imagesLoaded().progress( function() {
     $('.grid').masonry('layout');
+  });
+}
+
+//function that will trigger a fadeIn effect on each section
+function setWaypoints(){
+  let sections = $(".section");
+  //initially have all the sections faded out
+  sections.each(function(){
+    $(this).fadeOut();
+  });
+  
+  var skillsWaypoints = $('#skills').waypoint({
+    handler: function(direction) {
+      if(direction === "down"){
+        $("#skills").fadeIn(750);
+      }
+    },
+    offset: "75%"
+  });
+
+  var projectsWaypoints = $('#projects').waypoint({
+    handler: function(direction) {
+      if(direction === "down"){
+        $("#projects").fadeIn(750);
+      }
+    },
+    offset: "75%"
+  });
+
+  var experienceWaypoints = $('#experience').waypoint({
+    handler: function(direction) {
+      if(direction === "down"){
+        $("#experience").fadeIn(750);
+      }
+    },
+    offset: "75%"
   });
 }
