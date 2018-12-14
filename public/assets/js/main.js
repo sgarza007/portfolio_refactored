@@ -1,6 +1,7 @@
 function main(){
   initMasonry();
   setWaypoints();
+  initSmoothScrolling();
   rgbMain();
   twitchMain();
 }
@@ -17,38 +18,63 @@ function initMasonry(){
   });
 }
 
+//provides cross-browser smooth scrolling
+function initSmoothScrolling(){
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1000, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+}
+
 //function that will trigger a fadeIn effect on each section
 function setWaypoints(){
   let sections = $(".section");
-  //initially have all the sections faded out
-  sections.each(function(){
-    $(this).fadeOut();
-  });
-  
   var skillsWaypoints = $('#skills').waypoint({
     handler: function(direction) {
       if(direction === "down"){
-        $("#skills").fadeIn(750);
+        $("#skills").removeClass("fadeOut");
+        $("#skills").addClass("fadeInUp");
       }
     },
-    offset: "75%"
-  });
-
-  var projectsWaypoints = $('#projects').waypoint({
-    handler: function(direction) {
-      if(direction === "down"){
-        $("#projects").fadeIn(750);
-      }
-    },
-    offset: "75%"
+    offset: "90%"
   });
 
   var experienceWaypoints = $('#experience').waypoint({
     handler: function(direction) {
       if(direction === "down"){
-        $("#experience").fadeIn(750);
+        $("#experience").removeClass("fadeOut");
+        $("#experience").addClass("fadeInUp");
       }
     },
-    offset: "75%"
+    offset: "90%"
+  });
+
+  var projectsWaypoints = $('#projects').waypoint({
+    handler: function(direction) {
+      if(direction === "down"){
+        $("#projects").removeClass("fadeOut");
+        $("#projects").addClass("fadeInUp");
+      }
+    },
+    offset: "90%"
   });
 }

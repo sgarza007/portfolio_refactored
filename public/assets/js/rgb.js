@@ -51,6 +51,7 @@ function rgbMain(){
     //event listener to check if they guessed the right RGB
     squares.on("click", function () {
         let clickedRGB = $(this).css("backgroundColor");
+        console.log(correctRGB);
         //check to see if right one was guessed
         if(clickedRGB === correctRGB){
             //turn every square to the correct color

@@ -2,10 +2,17 @@ body,.card,.list-group-item{
     background-color: #ECF0F1;
 }
 
-
+/* html {
+    scroll-behavior: smooth;
+  } */
 
 .navbar,.card-header,.card-title{
     background-color: #34495E!important;
+}
+
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 h1,h2,p,table,.figure-caption{
@@ -72,10 +79,10 @@ h1,h2,p,table,.figure-caption{
 .square{
     width: 30%;
     padding-bottom: 30%;
-    background-color: #C0392B;
     float: left;
     margin: 1.66%;
     border-radius: 25%;
+    background-color: #ECF0F1;
 }
 
 #newColors{
@@ -92,7 +99,7 @@ h1,h2,p,table,.figure-caption{
     letter-spacing: 3px;
 }
 
-.rgbBtns:focus {
+.rgbBtns:focus, #getData:focus {
     outline: none;
 }
 
@@ -120,8 +127,6 @@ h1,h2,p,table,.figure-caption{
     text-align: center;
     color: #2C3E50!important;
 }
-
-
 
   .wp-caption {
     position: relative;
@@ -164,6 +169,7 @@ h1,h2,p,table,.figure-caption{
 
 .travel-pic:hover{
     transform: scale(1.10);
+    transition: transform 0.2s;
 }
 
 #profile-pic{
@@ -187,11 +193,17 @@ h1,h2,p,table,.figure-caption{
 .media-link{
 	color:#3498DB; 
 	text-decoration:none; 
-	cursor:pointer;
+    cursor:pointer;
+    
 }
+
+.nav-item{
+    height: 100%;
+}
+
 .media-link:hover{
 	color:#2980B9; 
-	text-decoration:none; 
+    text-decoration:none; 
 }
 
 .hr-header{
