@@ -35,7 +35,7 @@ function initSmoothScrolling(){
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 1000, function(){
+        }, 900, function(){
   
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
@@ -55,7 +55,7 @@ function setWaypoints(){
         $("#skills").addClass("fadeInUp");
       }
     },
-    offset: "90%"
+    offset: "80%"
   });
 
   var experienceWaypoints = $('#experience').waypoint({
@@ -65,7 +65,7 @@ function setWaypoints(){
         $("#experience").addClass("fadeInUp");
       }
     },
-    offset: "90%"
+    offset: "80%"
   });
 
   var projectsWaypoints = $('#projects').waypoint({
@@ -75,6 +75,6 @@ function setWaypoints(){
         $("#projects").addClass("fadeInUp");
       }
     },
-    offset: "90%"
+    offset: "80%"
   });
 }

@@ -2,10 +2,6 @@ body,.card,.list-group-item{
     background-color: #ECF0F1;
 }
 
-/* html {
-    scroll-behavior: smooth;
-  } */
-
 .navbar,.card-header,.card-title{
     background-color: #34495E!important;
 }
@@ -13,6 +9,8 @@ body,.card,.list-group-item{
 #errorMessage{
     color: red!important;
     padding-top: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .navbar{
@@ -195,26 +193,33 @@ h1,h2,p,table,.figure-caption{
     color: #3498DB;
 }
 
+.contact-link:hover{
+    margin-bottom: 10px;
+    color: #2980B9;
+}
+
 .media-link{
 	color:#3498DB; 
 	text-decoration:none; 
     cursor:pointer;
-    
+}
+
+hr{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-bottom: 2px solid #3498DB;
+    border-top: none;
 }
 
 .nav-item{
     height: 100%;
+    text-align: center;
 }
 
 .media-link:hover{
 	color:#2980B9; 
     text-decoration:none; 
-}
-
-.hr-header{
-    max-width: 25%;
-    background-color:#3498DB; 
-    display: inline;
 }
 
 table{
