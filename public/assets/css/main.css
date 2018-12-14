@@ -2,12 +2,17 @@ body,.card,.list-group-item{
     background-color: #ECF0F1;
 }
 
-.navbar{
-    background-color: #2980B9!important;
+.navbar,.card-header,.card-title{
+    background-color: #BDC3C7!important;
 }
 
-.nav-link{
-    color: #ecf0f1!important;
+.nav-link,.navbar-brand,h1,h2,p,table,.figure-caption{
+    /* color: #ecf0f1!important; */
+    color: #2C3E50!important;
+}
+
+.work-xp-header{
+    margin-bottom: 10px;
 }
 
 .project{
@@ -84,12 +89,12 @@ body,.card,.list-group-item{
     outline: none;
 }
 
-.rgbBtns:hover{
+.rgbBtns:hover,.nav-link:hover{
     background-color: #3498DB;
-    color: white;
+    color: white!important;
 }
 
-.active{
+.active,#getData{
     background-color: #3498DB;
     color: white;
 }
@@ -106,6 +111,15 @@ body,.card,.list-group-item{
 
 .header{
     text-align: center;
+    color: #2C3E50!important;
+}
+
+.card-header{
+    color: #2C3E50!important;
+}
+
+.travel-pic:hover{
+    transform: scale(1.10);
 }
 
 #profile-pic{
