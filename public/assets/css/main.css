@@ -10,6 +10,11 @@ body,.card,.list-group-item{
     background-color: #34495E!important;
 }
 
+#errorMessage{
+    color: red!important;
+    padding-top: 10px; 
+}
+
 .navbar{
     padding-top: 0px;
     padding-bottom: 0px;

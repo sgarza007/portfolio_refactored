@@ -20,30 +20,31 @@ function makeRequest(streamInput){
     const url = "https://api.twitch.tv/kraken/streams/";
     fetch(url+streamInput+key)
     .then(function(res){
-        if(!res.ok){
-            throw Error("Oops! Something went wrong.");
-        }
-        return res;
-    })
-    .then(function(res){
-        console.log(res);
+        $("#errorMessage").removeClass("rubberBand");
         return res.json();
     })
     .then(function(data){
-        console.log(data);
-        //update view
-        let streamStatus = data.stream;
-        if(streamStatus){
-            streamName.text(data.stream.channel.display_name);
-            streamGame.text(data.stream.game);
-            streamViewers.text(data.stream.viewers);
+        if(!data.error){
+            $("#errorMessage").text("");
+            console.log(data);
+            //update view
+            let streamStatus = data.stream;
+            if(streamStatus){
+                streamName.text(data.stream.channel.display_name);
+                streamGame.text(data.stream.game);
+                streamViewers.text(data.stream.viewers);
+            } else{
+                streamName.text(streamInput);
+                streamGame.text("IS NOT LIVE");
+                streamViewers.text("0");
+            }
         } else{
-            streamName.text(streamInput);
-            streamGame.text("IS NOT LIVE");
-            streamViewers.text("0");
+            console.log(data);
+            throw Error("Oops! Something went wrong: "+data.error);
         }
     })
     .catch(function(err){
-        alert(err);
+        $("#errorMessage").text(err);
+        $("#errorMessage").addClass("rubberBand");
     });
 }
