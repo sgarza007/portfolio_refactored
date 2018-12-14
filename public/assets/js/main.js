@@ -1,10 +1,17 @@
 function main(){
-    // var waypoints = $('#skill').waypoint(function(direction) {
-    //     notify(this.element.id + ' hit 25% from top of window') 
-    //   }, {
-    //     offset: '25%'
-    //   });
-
+  $("#skills").fadeOut();
+  
+  var waypoint = new Waypoint({
+    element: document.getElementById('skills'),
+    handler: function(direction) {
+      if(direction === "down"){
+        //fadeIn skills
+        $("#skills").fadeIn(700);
+      } else{
+      }
+    },
+    offset: 100
+  });
       initMasonry();
 }
 
