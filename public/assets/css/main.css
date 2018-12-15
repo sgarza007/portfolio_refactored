@@ -6,6 +6,22 @@ body,.card,.list-group-item{
     background-color: #34495E!important;
 }
 
+h1,h2,p,table,.figure-caption{
+    /* color: #ecf0f1!important; */
+    color: #2C3E50!important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.header{
+    text-align: center;
+    color: #2C3E50!important;
+}
+
 #errorMessage{
     color: red!important;
     padding-top: 10px; 
@@ -16,11 +32,6 @@ body,.card,.list-group-item{
 .navbar{
     padding-top: 0px;
     padding-bottom: 0px;
-}
-
-h1,h2,p,table,.figure-caption{
-    /* color: #ecf0f1!important; */
-    color: #2C3E50!important;
 }
 
 .nav-link,.navbar-brand,.card-header{
@@ -108,27 +119,12 @@ h1,h2,p,table,.figure-caption{
 
 .rgbBtns:hover,.nav-link:hover{
     background-color: #3498DB;
-    color: white!important;
+    color: #ECF0F1!important;
 }
 
 .active,#getData{
     background-color: #3498DB;
-    color: white;
-}
-
-.hide{
-    display: none;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-.header{
-    text-align: center;
-    color: #2C3E50!important;
+    color: #ECF0F1;
 }
 
   .wp-caption {

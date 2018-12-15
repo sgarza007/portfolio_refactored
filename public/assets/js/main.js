@@ -6,6 +6,7 @@ function main(){
   twitchMain();
 }
 
+//inits the masonry grid
 function initMasonry(){
   $('.grid').masonry({
     itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-

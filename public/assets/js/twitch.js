@@ -3,11 +3,6 @@ function twitchMain(){
     let streamInput = $("#streamInput");
     
     getDataBtn.on("click",function(){
-        //check to see if there was anything typed
-
-        //TODO: ERROR HANDLING
-        if(streamInput.val.length === 0) console.log("error");
-        console.log(streamInput.val());
         makeRequest(streamInput.val());
     });   
 }
@@ -16,9 +11,11 @@ function makeRequest(streamInput){
     let streamName = $("#streamName");
     let streamGame = $("#streamGame");
     let streamViewers = $("#streamViewers");
+    //create a URL for api call
     const key = "?client_id=03i44s2mzxk0s9ksqzvhu16i5im3ul";
     const url = "https://api.twitch.tv/kraken/streams/";
     fetch(url+streamInput+key)
+    //handle error
     .then(function(res){
         $("#errorMessage").removeClass("rubberBand");
         return res.json();

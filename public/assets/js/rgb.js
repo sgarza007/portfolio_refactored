@@ -51,7 +51,6 @@ function rgbMain(){
     //event listener to check if they guessed the right RGB
     squares.on("click", function () {
         let clickedRGB = $(this).css("backgroundColor");
-        console.log(correctRGB);
         //check to see if right one was guessed
         if(clickedRGB === correctRGB){
             //turn every square to the correct color
@@ -60,16 +59,13 @@ function rgbMain(){
                 rgbMessage.text("YOU GOT IT!");
                 newColorsBtn.text("Play Again?");
             });
+            rgbMessage.addClass("jello");
         } else{
             //make the square disappear
             $(this).css( "backgroundColor","#ECF0F1");
             rgbMessage.text("Try Again!");
         }
     });
-}
-
-function start(){
-
 }
 
 //sets color of squares
